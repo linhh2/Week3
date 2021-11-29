@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grids</title>
+        <style>
+            .wrapper{
+                display: grid;
+                grid-template-columns: 70% 30%;
+                /*
+                grid-column-gap: 1em;
+                grid-row-gap: 1em;
+                */
+                grid-gap: 1em;
+            }
+            .wrapper > div{
+                background: #eee;
+                padding: 1em;
+            }
+
+            .wrapper > div:nth-child(odd){
+                background: #ddd;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sapiente quia, sed id repellendus obcaecati ea tempore temporibus deserunt odio architecto? Odit, eligendi quisquam? Nemo corporis ab delectus mollitia libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad quam illo consequuntur minus quaerat cumque, architecto quia voluptatibus saepe aut, nihil modi libero eveniet nostrum praesentium qui quas quo!
+            </div>
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit debitis a cumque autem laborum voluptates iste placeat, neque inventore aut deleniti modi maxime iure vero, voluptate explicabo nulla accusamus soluta!
+            </div>
+
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sapiente quia, sed id repellendus obcaecati ea tempore temporibus deserunt odio architecto? Odit, eligendi quisquam? Nemo corporis ab delectus mollitia libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad quam illo consequuntur minus quaerat cumque, architecto quia voluptatibus saepe aut, nihil modi libero eveniet nostrum praesentium qui quas quo!
+            </div>
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit debitis a cumque autem laborum voluptates iste placeat, neque inventore aut deleniti modi maxime iure vero, voluptate explicabo nulla accusamus soluta!
+            </div>
+
+        </div>
+        
+    </body>
+</html>
